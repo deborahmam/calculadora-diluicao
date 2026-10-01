@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="calculadora de diluição de óleos essenciais">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Diluição de óleos essenciais</title>
+</head>
+
+<body>
+    <header>
+        <img src="./Assets/logo.png" alt="Arōma Mattos">
+        <nav>
+            <ul>
+                <li><a href="#calculadora">Calculadora</a></li>
+                <li><a href="#oleos">Sobre os óleos essenciais</a></li>
+                <li><a href="#seguranca">Segurança</a></li>
+                <li><a href="#sobre">Quem somos</a></li>
+                <li><a href="#contato">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="calculadora">
+            <div class="hero-texto">
+                <p class="chamada"> CALCULADORA DE DILUIÇÃO </p>
+                <h1> Descubra como diluir seu óleo essencial.</h1>
+                <p> Orientações práticas para diluir e usar óleos essenciais no dia a dia, com mais segurança e
+                    consciência.
+                </p>
+
+                <ul class="hero-icones">
+                    <li><img src="./Assets/icone-folha-do-mockup-.png" alt=""> INFORMAÇÃO BASEADA EM EVIDÊNCIAS</li>
+                    <li><img src="./Assets/icone-seguranca-escudo-.png" alt=""> USO SEGURO PARA TODA FAMÍLIA</li>
+                    <li><img src="./Assets/icone-coracao-do-mockup-.png" alt=""> MAIS BEM-ESTAR COM CONSCIÊNCIA</li>
+                </ul>
+            </div>
+
+
+            <div class="hero-calculadora">
+                <div class="cartao">
+                    <div class="cartao-topo">
+                        <h2>Vamos calcular sua diluição?</h2>
+                        <p> Preencha os campos abaixo e descubra a quantidade ideal.</p>
+                    </div>
+
+
+                    <form>
+                        <div class="campo">
+                            <label for="uso"><span class="numero">1</span>Indicação de uso:</label>
+                            <select id="uso" required>
+                                <option value=""> Selecione...</option>
+                                <option value="bebes"> em Bebês </option>
+                                <option value="ate-5-anos"> em crianças até 5 anos </option>
+                                <option value="pele-sensivel"> Peles sensíveis </option>
+                                <option value="diario"> Uso diário </option>
+                                <option value="pontual"> Uso específico, pontual </option>
+                                <option value="cosmeticos"> Cosméticos </option>
+                                <option value="relaxamento"> Massagens e Relaxamento </option>
+                                <option value="dores"> Dores Crônicas </option>
+                                <option value="queimadura"> Arranhões e queimaduras </option>
+                                <option value="insetos"> Picadas de insetos </option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="oleo"><span class="numero">2</span> Óleo essencial</label>
+                            <select id="oleo" required>
+                                <option value="">Selecione...</option>
+                                <option value="lavanda"> Lavanda </option>
+                                <option value="olibano"> Frankincense (olíbano) </option>
+                                <option value="peppermint"> Peppermint </option>
+                                <option value="lemon"> Lemon </option>
+                                <option value="wild-orange"> Wild Orange </option>
+                                <option value="cedro"> Cedro </option>
+                                <option value="tea-tree"> Melaleuca</option>
+                                <option value="copaiba"> Copaíba </option>
+                                <option value="breathe"> Breathe </option>
+                                <option value="zengest"> Zengest </option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="frasco"><span class="numero">3</span>Tamanho do frasco:</label>
+                            <select id="frasco" required>
+                                <option value=""> Selecione...</option>
+                                <option value="10"> 10 ml </option>
+                                <option value="15"> 15 ml </option>
+                                <option value="20"> 20 ml </option>
+                                <option value="30"> 30 ml </option>
+                                <option value="50"> 50 ml </option>
+                                <option value="100"> 100 ml </option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="idade"><span class="numero">4</span> Pra quem?</label>
+                            <select id="idade" required>
+                                <option value="">Selecione...</option>
+                                <option value="recem-nascido"> Recém nascido e bebês de 1 a 3 meses </option>
+                                <option value="3-a-6-meses"> Bebês de 3 a 6 meses </option>
+                                <option value="6-a-12-meses"> Bebês de 6 a 12 meses </option>
+                                <option value="1-a-5-anos"> Crianças de 1 a 5 anos </option>
+                                <option value="child"> Crianças de 6 a 12 anos</option>
+                                <option value="teenage"> Adolescentes </option>
+                                <option value="adultos"> Adultos </option>
+                                <option value="idosos"> Idosos </option>
+                                <option value="sick-people"> Pessoas com sistema imunitário comprometido </option>
+                                <option value="pregnant"> Grávidas </option>
+                            </select>
+                        </div>
+                        <button type="submit">Diluir</button>
+                    </form>
+                </div>
+
+                <div class="cartao cartao-resultado">
+                    <div class="cartao-faixa">
+                        <div>
+                            <h2> Como diluir</h2>
+                            <p> Confira o resultado personalizado para sua escolha.</p>
+                        </div>
+                    </div>
+                    <div class="cartao-corpo">
+                        <p id="resultado"> Preencha os campos e clique em Diluir para ver sua diluição.  </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="oleos" class="secao">
+            <div class="cartao cartao-texto">
+
+                <div class="cartao-faixa">
+                    <h2> O que são óleos essenciais</h2>
+                </div>
+
+                <div class="cartao-corpo">    
+                    <p>Óleos essenciais são extratos concentrados e aromáticos de plantas, obtidos de partes como flores,
+                        folhas, cascas, raízes ou frutos. Eles contêm compostos voláteis que dão à planta seu aroma característico.
+                    </p>
+                    <p>Podem ser extraídos, por exemplo, por destilação a vapor ou prensagem da casca de frutas cítricas. São
+                        diferentes de óleos vegetais, como azeite ou óleo de amêndoas: em geral, evaporam e não são gordurosos.
+                    </p>
+                    <p>Como são concentrados, alguns podem irritar a pele ou causar reações. O uso seguro depende do óleo e da
+                        forma de aplicação.
+                    </p>
+                </div>    
+            </div>        
+        </section>
+
+        <section id="seguranca" class="secao">
+            <div class="cartao cartao-texto">
+                <div class="cartao-faixa">
+                    <h2> Segurança</h2>
+                </div>
+                <div class="cartao-corpo">    
+                    <p> É recomendada a diluição de alguns óleos essenciais em óleo carreador antes de aplicá-los na pele e
+                        seguir as
+                        instruções específicas de cada produto. Também destacamos os cuidados extras com pele sensível, crianças
+                        e
+                        alguns óleos cítricos, que podem exigir atenção à exposição ao sol após a aplicação.</p>
+                    <p>Os roll-ons que são descritos como "touch" são pré-diluídos e formulados para crianças a partir de 3
+                        anos.
+                    </p>
+                    <p>Nós acreditamos na ingestão e aplicação direta, mas essas recomendações variam de pessoa para pessoa. E
+                        só
+                        recomendamos a ingestão e utilização dos óleos essenciais dōTERRA adquiridos por meio do site oficial ou
+                        por
+                        meio de consultores de bem-estar da dōTERRA.
+                    </p>
+                </div>
+            </div>        
+        </section>
+
+        <section id="sobre" class="secao">
+            <div class="cartao cartao-texto">
+                <div class="cartao-faixa">
+                    <h2> Quem somos</h2>
+                </div>
+                <div class="cartao-corpo">    
+                    <div class="sobre-intro">    
+                        <img src="./Assets/deborah.png" alt="Deborah Mattos">
+                        <p>Sou Deborah Mattos, consultora de bem-estar dōTERRA. Meu trabalho é compartilhar informações sobre óleos
+                            essenciais e produtos dōTERRA, ajudando pessoas e famílias a conhecerem as opções disponíveis e a
+                            encontrarem aquelas que fazem sentido para sua rotina.
+                        </p>
+                    </div>    
+                    <p>Gosto de transformar informações em orientações práticas e acessíveis. Por meio de conteúdos, dicas e
+                        conversas, apresento diferentes formas de explorar os óleos essenciais e os produtos dōTERRA, sempre
+                        incentivando escolhas conscientes e o uso atento às instruções de cada produto.
+                    </p>
+                    <p>Acredito que bem-estar também se constrói nos pequenos cuidados do dia a dia. Por isso, procuro oferecer
+                        um atendimento próximo e acolhedor, ouvindo cada pessoa e respeitando suas necessidades e preferências.
+                    </p>
+                    <p>Será um prazer acompanhar você nessa descoberta e compartilhar mais sobre o universo dōTERRA.</p>
+                </div>
+            </div>        
+        </section>
+
+        <section id="contato" class="secao">
+            <div class="cartao cartao-texto">
+                <div class="cartao-faixa">
+                    <h2> Contatos</h2>
+                </div>
+                <div class="cartao-corpo contatos">    
+                    <a href="https://wa.me/5521981168581" class="botao-contato" target="_blank" rel="noopener">Whatsapp</a>
+                    <a href="https://www.instagram.com/deborahmattosazev/" class="botao-contato" target="_blank" rel="noopener">Instagram</a>
+                </div>
+            </div>    
+        </section>
+    </main>
+</body>
+
+</html>
